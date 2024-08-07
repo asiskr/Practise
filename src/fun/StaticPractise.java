@@ -1,7 +1,7 @@
 package fun;
 
 // Class definition
-public class Practise {
+public class StaticPractise {
 
     // Static variable shared across all instances
     static String name;
@@ -24,7 +24,7 @@ public class Practise {
     }
 
     // Static method to display values of name and roll for a given Practise object
-    public static void show1(Practise obj) {
+    public static void show1(StaticPractise obj) {
         // Accessing the object's instance variables
         System.out.println(obj.name + " " + obj.roll + " ");
     }
@@ -34,12 +34,12 @@ public class Practise {
 class Main {
     public static void main(String args[]) {
         // Creating first object of Practise class
-        Practise obj = new Practise();
+        StaticPractise obj = new StaticPractise();
         // Setting static name variable and instance roll variable
         obj.roll = 45;
 
         // Creating second object of Practise class
-        Practise obj1 = new Practise();
+        StaticPractise obj1 = new StaticPractise();
         // Setting static name variable and instance roll variable
         obj1.roll = 452;
 
@@ -48,6 +48,6 @@ class Main {
         obj1.show();  // Output: "sahil 452"
 
         // Displaying the values using static method
-        Practise.show1(obj1);  // Output: "sahil 452"
+        StaticPractise.show1(obj1);  // Output: "sahil 452"
     }
 }
