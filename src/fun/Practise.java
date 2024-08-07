@@ -9,6 +9,13 @@ public class Practise {
     // Instance variable specific to each object
     int roll;
 
+    //Static block
+    static {
+    	name="saas";
+    	System.out.println("name of the user is: " +name);
+    }
+    
+    
     // Instance method to display the values of name and roll
     public void show() {
         // name is static, so it's shared across all instances
@@ -29,13 +36,11 @@ class Main {
         // Creating first object of Practise class
         Practise obj = new Practise();
         // Setting static name variable and instance roll variable
-        obj.name = "amrit";
         obj.roll = 45;
 
         // Creating second object of Practise class
         Practise obj1 = new Practise();
         // Setting static name variable and instance roll variable
-        obj1.name = "sahil";
         obj1.roll = 452;
 
         // Displaying the values using instance methods
